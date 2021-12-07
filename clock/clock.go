@@ -7,6 +7,8 @@ type Clock struct{
     h,m int
 }
 
+
+// whenever using or defining functions related to time anf date, avoid pointers
 func (c Clock)Reformat() (h,m int){
 	for c.h<0 || c.h>=24 || c.m<0 || c.m>=60{
 
